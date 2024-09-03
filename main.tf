@@ -6,6 +6,8 @@ provider "aws" {
   skip_credentials_validation = true  # Set to true to skip credentials validation if using a custom endpoint
   skip_metadata_api_check = true      # Set to true to skip metadata API check if using a custom endpoint
   skip_requesting_account_id = true   # Set to true to skip account check (this will generate a warning) if using custom endpoint
+  insecure = true
+
   endpoints {
     s3 = "https://s37.1-900-steve.com"  # Replace with your custom S3 endpoint
   }
